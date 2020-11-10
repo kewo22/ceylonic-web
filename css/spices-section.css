@@ -1,0 +1,24 @@
+.spice-section-wrapper {
+    min-height: 800px;
+    background-color: #000000;
+}
+
+.main-img {
+    /* background-image: url("../images/Cinnamon-Sticks-1.png"); */
+    /* width: 100%; */
+    /* height: 400px; */
+    /* clip-path: inset(0 53% 0 0); */
+}
+
+/* img {
+    clip-path: inset(0 53% 0 0);
+} */
+
+.single-spice-wrapper {
+    padding: 0 8% 8%;
+}
+
+.single-spice-wrapper h3 {
+    font-size: 4rem;
+    margin-bottom: 4%;
+}
