@@ -21,12 +21,12 @@ section.home-section-wrapper .hero-wrapper {
     flex-direction: column;
     justify-content: space-between;
 
-    background: linear-gradient(143deg, #dc6511, #6d9327);
+    /* background: linear-gradient(143deg, #dc6511, #6d9327);
     background-size: 400% 400%;
 
     -webkit-animation: AnimationName 20s ease-in-out infinite;
     -moz-animation: AnimationName 20s ease-in-out infinite;
-    animation: AnimationName 20s ease-in-out infinite;
+    animation: AnimationName 20s ease-in-out infinite; */
 }
 
 @-webkit-keyframes AnimationName {
@@ -100,7 +100,7 @@ section.home-section-wrapper .cate-img {
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
-    border-radius: 28px;
+    border-radius: 15px;
 }
 
 section.home-section-wrapper .cate-1 {
@@ -170,7 +170,7 @@ section.home-section-wrapper .cate-4 {
     section.home-section-wrapper .hero-wrapper {
         overflow: auto;
         padding: 0;
-        height: 100vh;
+        /* height: 100vh; */
     }
 
     section.home-section-wrapper .hero {
