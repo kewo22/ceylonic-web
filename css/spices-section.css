@@ -25,16 +25,95 @@
 
 .cinnmin-images-wrapper {
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 40px;
     grid-template-columns: 1fr 1fr 1fr;
     color: #444;
     height: 500px;
 }
 
 .cinnmin-images-wrapper .box {
+    color: #ffffff;
+    font-size: 135%;
+    position: relative;
 }
 
-.a {
+/* .info {
+    position: absolute;
+    bottom: -20px;
+    color: #000000;
+    background-color: #000000;
+    height: 35px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    transition: all 0.5s ease-in-out;
+}
+
+.box:hover .info {
+    color: #ffffff;
+    bottom: 0;
+} */
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    opacity: 0;
+
+    transition: all 0.5s ease-in-out;
+}
+
+.info {
+    position: absolute;
+    bottom: -100%;
+    color: #000000;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+
+    transition: all 0.5s ease-in-out;
+}
+
+.box:not(.overlay):hover .overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 1;
+}
+
+.box:not(.overlay):hover .info {
+    color: #ffffff;
+    bottom: 0%;
+    opacity: 1;
+}
+
+span.title {
+    margin-bottom: 1rem;
+}
+
+button.cinnmon-more-info {
+    padding: 4px 10px;
+    font-size: 14px;
+    outline: none;
+    border: 0.1px solid transparent;
+    background: black;
+    color: white;
+
+    transition: all 0.8s ease-in-out;
+}
+
+button.cinnmon-more-info:hover {
+    cursor: pointer;
+    border: 0.1px solid #ffffff;
+}
+
+.sticks {
     grid-column: 1 / 3;
     grid-row: 1;
     background-image: url("../images/cinnmon-stick.jpg");
@@ -44,7 +123,7 @@
     background-size: cover;
 }
 
-.b {
+.leaf-oil {
     grid-column: 3;
     grid-row: 1 / 3;
     background-image: url("../images/cinnmon-bark-oil.jpg");
@@ -54,7 +133,7 @@
     background-size: cover;
 }
 
-.c {
+.powder {
     grid-column: 1;
     grid-row: 2;
     background-image: url("../images/cinnmon-powder.jpg");
@@ -64,7 +143,7 @@
     background-size: cover;
 }
 
-.d {
+.bark-oil {
     grid-column: 2;
     grid-row: 2;
     background-image: url("../images/cinnmon-leaf-oil.jpg");
